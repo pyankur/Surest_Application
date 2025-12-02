@@ -5,9 +5,15 @@ import org.hibernate.annotations.UuidGenerator;
 
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.UUID;
 
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "member")
 public class Member {
